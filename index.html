@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minute Class — Swahili Learning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-main: #fcfcfd;
+            --accent: #6366f1;
+            --glass: rgba(255, 255, 255, 0.85);
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-main);
+            color: #0f172a;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+        
+        /* Animated Background Gradients */
+        .bg-morning { background: radial-gradient(at 0% 0%, rgba(251, 191, 36, 0.15) 0, transparent 50%), radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.1) 0, transparent 50%); }
+        .bg-afternoon { background: radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.15) 0, transparent 50%), radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.1) 0, transparent 50%); }
+        .bg-night { background: radial-gradient(at 0% 0%, rgba(79, 70, 229, 0.15) 0, transparent 50%), radial-gradient(at 100% 100%, rgba(15, 23, 42, 0.1) 0, transparent 50%); }
+        .bg-premium-gold { 
+            background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(251, 191, 36, 0.05) 100%), 
+                        radial-gradient(at 0% 0%, rgba(245, 158, 11, 0.12) 0, transparent 50%), 
+                        radial-gradient(at 100% 100%, rgba(251, 191, 36, 0.08) 0, transparent 50%); 
+        }
+
+        .glass-panel {
+            background: var(--glass);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+
+        .shadow-premium {
+            box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.08);
+        }
+
+        .lesson-body p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            letter-spacing: -0.01em;
+            color: #334155;
+            margin-bottom: 1.5rem;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float { animation: float 6s ease-in-out infinite; }
+
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        
+        .active-pill {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+        }
+
+        .bg-gold-gradient {
+            background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.37.0"
+  }
+}
+</script>
+</head>
+<body class="transition-colors duration-1000">
+    <div id="root"></div>
+</body>
+</html>
